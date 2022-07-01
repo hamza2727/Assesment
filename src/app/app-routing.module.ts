@@ -15,7 +15,7 @@ const routes: Routes = [
       import('./pages/admin/admin.module').then((m) => m.AdminModule),
   },
   {
-    path: 'posts', canActivate: [AuthGuard],
+    path: 'posts', canLoad: [AuthGuard],
     loadChildren: () =>
       import('./pages/admin/posts/posts.module').then((m) => m.PostsModule),
   },

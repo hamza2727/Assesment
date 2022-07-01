@@ -20,7 +20,6 @@ export class PostDetailsComponent implements OnInit {
   ngOnInit(): void { }
 
   loadPostByPostId(): void {
-    debugger;
     this.postsService.getPostById(this.postId).subscribe(
       (res: any) => {
         let userId = res.userId;
@@ -44,7 +43,6 @@ export class PostDetailsComponent implements OnInit {
   }
 
   navigateToUserDetails(id: any): void {
-    debugger;
     this.userService.updateUserId(id);
     this.router.navigate(['/userdetails']);
   }

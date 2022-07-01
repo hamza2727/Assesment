@@ -20,7 +20,6 @@ export class UsersComponent implements OnInit {
   getUsersList(): void {
     this.userService.getUsers().subscribe(
       (res) => {
-        debugger;
         this.listOfUsers = res;
       },
       (err) => {

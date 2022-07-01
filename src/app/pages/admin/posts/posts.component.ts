@@ -16,7 +16,6 @@ export class PostsComponent implements OnInit {
   }
 
   getListOfPosts(): void {
-    debugger;
     this.postsService.loadPosts().subscribe(
       (res) => {
         this.listOfPosts = res;
@@ -28,7 +27,6 @@ export class PostsComponent implements OnInit {
   }
 
   navigateToPostDetails(postid: any): void {
-    debugger;
     this.postsService.updatePostId(postid);
     this.router.navigate(['/postdetails']);
   }
