@@ -1,0 +1,12 @@
+<div class="centered">
+
+    <section class="cards">
+
+        <article *ngFor="let post of listOfPosts" class="card">
+            <b>Post Title</b>
+            <p>{{post.title}}</p>
+            <button (click)="navigateToPostDetails(post.id)">View Details </button>
+        </article><!-- /card-one -->
+
+    </section>
+</div>

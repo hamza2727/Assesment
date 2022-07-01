@@ -1,0 +1,12 @@
+<div class="centered">
+
+    <section class="cards">
+
+        <article *ngFor="let user of listOfUsers" class="card">
+            <b>User:{{user.name}}</b>
+            <p></p>
+            <button (click)="navigateToUserDetails(user.id)">View Details </button>
+        </article><!-- /card-one -->
+
+    </section>
+</div>

@@ -1,0 +1,19 @@
+<h1>TODO: Load this page only if user is logged in</h1>
+<p>Is logged in: {{ isLoggedIn }}  </p>
+
+<h2>Navigation</h2>
+<div class="nav">
+    <ul>
+        <!-- Enable link if user has 'catalog.read' perissions  -->
+        <!-- This link should navigate user to /posts -->
+        <li><a routerLink = "/posts" >Posts </a></li>
+
+        <!-- Enable link if user has 'user.read' perissions  -->
+        <!-- This link should navigate user to /users -->
+        <li><a routerLink = "/users">Users </a></li>
+    </ul>
+</div>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
