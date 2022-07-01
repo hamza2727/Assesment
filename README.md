@@ -1,7 +1,5 @@
 # Assessment
 
-Upload the assessment to your GitHub/Bitbucket profile when you are done
-
 ## Routing assesment
 
 When application is loaded, check if user is logged in
